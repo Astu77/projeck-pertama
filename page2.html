@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page</title>
+    <style>
+
+
+.dropdwn {
+   background-color: #eccaca;
+    color: rgb(72, 133, 245);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .dropdown-content {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    gap: 15px;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+  }
+
+  .dropdown-content.show {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: none;
+  }
+  .dropdown:hover .dropdown-content 
+  
+  {display: block;}
+
+  .content {
+    margin-top: -210px;
+    width: 800px;
+    border: 1px solid rgb(109, 96, 96);
+    text-align: center;
+    position: absolute;
+    height: 460px;
+    z-index: 1;
+    overflow: hidden;
+    margin-left: 20%;
+    background: white;
+    box-shadow: 1px 2px 5px 5px rgb(107, 98, 98);
+    border-radius: 5px;
+    
+  }
+
+  
+
+  .dropdown-content p:hover{
+    background-color: #fff;
+  }
+  
+ ul {
+  width: 150px;
+  list-style-type:circle;
+  margin: 8px;
+  padding: 0;
+  margin-top: 70px;
+  overflow: hidden;
+  background-color: #eccaca;
+  box-shadow: 1px 2px 5px 5px rgb(107, 98, 98);
+  border-radius: 5px;
+ }
+
+ 
+
+ table {
+  margin-left: 30%;
+ }
+ .p1 {
+  font-weight: bold;
+  text-align: left;
+  line-height: 4;
+  word-spacing: 5px;
+ }
+ .p2 {
+  word-spacing: 30px;
+ }
+ 
+
+ .p3 {
+  text-align: left;
+ }
+ 
+ .foto{
+  
+  float: left;
+  margin-left: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+ }
+
+ .container {
+  display: flex;
+  margin-left: 120px;
+ }
+
+ .tabel{
+  position: relative;
+  display: inline-block;
+  margin: 30px;
+ }
+
+ .tabel-connten {
+  display: inline-flexbox;
+  position: static;
+  background-color: #da2323;
+  width: 250px;
+  height: 250px;
+  overflow: auto;
+  box-shadow: 1px 2px 5px 5px rgb(107, 98, 98);
+  border-radius: 5px;
+  z-index: 2;
+ }
+
+ .connten {
+  width: 800px;
+    border: 1px solid rgb(109, 96, 96);
+    
+    position: absolute;
+    z-index: 1;
+    margin-left: 20%;
+    background: rgb(206, 66, 66);
+    box-shadow: 1px 2px 5px 5px rgb(107, 98, 98);
+    border-radius: 5px;
+
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+ }
+
+ .section {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+ }
+ .tabdiv{
+  padding-bottom: 30px;
+  margin-left: 10%;
+  text-align: left;
+ 
+ }
+
+ th {
+  margin: 20px;
+ padding: 15px 80px;
+ border-spacing:  50px;
+ border-collapse: separate;
+ 
+ }
+ .tdi {
+  padding: 5px 80px;
+  border-spacing: 5px;
+  border-collapse: separate;
+ }
+
+ .navbar  {
+  list-style-type: none;
+  margin: -10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e46969;
+ }
+
+ .lgo {
+  margin-left: 50px;
+  color: white;
+ }
+    </style>
+</head>
+<body>
+    
+<nav class="navbar">
+ <h2 class="lgo">Logo</h2>
+</nav>
+  
+   <ul>
+    <div class="dropdown">
+        <button class="dropdwn" onclick="pilih1()">profile</button>
+        <div class="dropdown-content" id="parag1">
+            <h1>Profile</h1>
+            <div class="sections">
+            <img src="../../009951400_1674793020-grandvitaragrandvitararightfrontthreequarter.jpg" alt="" class="foto">
+           <table>
+            
+          <tr>
+            <td class="p1">Nama</td>
+            <td class="p2">:</td>
+            <td class="p3">Muahamad Astu Kurniawan</td>
+          </tr>
+          <tr>
+            <td class="p1">Umur</td>
+            <td class="p2">:</td>
+            <td class="p3">29 tahun</td>
+          </tr>
+          <tr>
+            <td class="p1">Alamat</td>
+            <td class="p2">:</td>
+            <td class="p3">Kp cibuah nangklak</td>
+          </tr>
+          <tr>
+            <td class="p1">Email</td>
+            <td class="p2">:</td>
+            <td class="p3">Astukurniawan@gmail.com</td>
+          </tr>
+          <tr>
+            <td class="p1">No telepon</td>
+            <td class="p2">:</td>
+            <td class="p3">082210519473</td>
+          </tr>
+           </table>
+          </div>
+        </div>
+        <button class="dropdwn" onclick="pilih2()">riwayat</button>
+        <div class="dropdown-content"  id="parag2">
+          <h1>Pengalaman kerja</h1>
+            <div class="container">
+            <table class="tabel">
+              <div class="tabel-connten">
+                <h2>PT Tunggal karya</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi delectus enim sunt. Consequatur necessitatibus, adipisci quo iste ut nam. Consequatur amet iusto expedita labore eligendi quos rerum autem nesciunt laborum.</p>
+              </div>
+            </table>
+            
+              <div class="tabel-connten">
+                <h2>PT Maju Mundur</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi delectus enim sunt. Consequatur necessitatibus, adipisci quo iste ut nam. Consequatur amet iusto expedita labore eligendi quos rerum autem nesciunt laborum.</p>
+              </div>
+            </table>
+          </div>
+        </div>
+        <button class="dropdwn" onclick="pilih3()">descriotion</button>
+        <div class="dropdown-content" id="parag3">
+          <h2>Edukasi</h2>
+           
+           <table class="tabdiv">
+          <tr>
+            
+              <th>Tahun</th>
+              <th>Institusi</th>
+              <th>Jurusan</th>
+            
+          </tr>
+          <tr>
+            <td class="tdi">2013</td>
+            <td class="tdi">Universitas Indonesia</td>
+            <td class="tdi">Maju kena</td>
+          </tr>
+          <tr>
+            <td class="tdi">2015</td>
+            <td class="tdi">Universitas gajah</td>
+            <td class="tdi">Mundur kena</td>
+          </tr>
+           </table>
+        </div>
+        </div>
+    </div>
+</ul>
+   <br><br><br>
+    <div class="content" for="" id="tampilkan"></div>
+    <script>
+      function pilih1() {
+        
+  var y = document.getElementById("parag1");
+    var tampilkan2 = document.getElementById("tampilkan");
+    if(y.style.display === "block"){
+        y.style.display = "none";
+        tampilkan2.innerHTML = "";
+    }else {
+        y.style.display = "";
+        tampilkan2.innerHTML = y.innerHTML;
+    }
+  }
+
+function pilih2() {
+    var k = document.getElementById("parag2");
+    var tampilkan2 = document.getElementById("tampilkan");
+    if(k.style.display === "block"){
+        k.style.display = "none";
+        tampilkan2.innerHTML = "";
+    }else {
+        k.style.display = "";
+        tampilkan2.innerHTML = k.innerHTML;
+    }
+}
+
+function pilih3()  {
+    var b = document.getElementById("parag3");
+    var tampilkan3 = document.getElementById("tampilkan");
+    if(b.style.display === "block"){
+        b.style.display = "none"
+        tampilkan3.innerHTML = "";
+    }else {
+        b.style.display = "";
+        tampilkan3.innerHTML = b.innerHTML;
+    }
+}
+
+
+    </script>
+</body>
+</html>
